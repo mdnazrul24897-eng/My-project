@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আমার ব্যক্তিগত ওয়েবসাইট</title>
+    <style>
+        /* ওয়েবসাইটের মূল ডিজাইন (CSS) */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            width: 90%;
+            max-width: 850px;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        /* ছবির অংশ */
+        .profile-pic-container {
+            flex: 1;
+            text-align: center;
+        }
+
+        .profile-pic {
+            width: 300px;         /* প্রস্থ ৩০০ পিক্সেল */
+            height: 200px;        /* উচ্চতা ২০০ পিক্সেল */
+            border-radius: 12px;   /* হালকা রাউন্ড শেপ */
+            border: 4px solid #6c5ce7;
+            object-fit: cover;     /* ছবি যেন চ্যাপ্টা না হয়ে সুন্দরভাবে ফিট হয় */
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        /* লেখার অংশ */
+        .bio-container {
+            flex: 2;
+        }
+
+        h1 {
+            color: #2d3436;
+            margin-top: 0;
+            font-size: 2.3rem;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            color: #6c5ce7;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        p {
+            line-height: 1.7;
+            color: #555;
+            font-size: 1.05rem;
+        }
+
+        /* যোগাযোগের বাটন */
+        .social-links {
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background-color: #6c5ce7;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(108, 92, 231, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #5b4bc4;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(108, 92, 231, 0.4);
+        }
+
+        /* মোবাইল স্ক্রিনের জন্য রেসপনসিভ ডিজাইন */
+        @media (max-width: 680px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+                padding: 30px 20px;
+            }
+            .profile-pic {
+                width: 100%;
+                max-width: 300px; /* মোবাইলেও অনুপাত ঠিক রাখবে */
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-pic-container">
+            <img src="Image at 8.15.19 PM (1).jpeg" alt="Md Nazrul Islam" class="profile-pic">
+        </div>
+
+        <div class="bio-container">
+            <h1>স্বাগতম, আমি Md Nazrul Islam</h1>
+            <h2>Beginner Web Developer</h2>
+            <hr style="border: 0; border-top: 2px solid #f1f2f6; margin: 20px 0;">
+            <p>
+                আমি একজন ওয়েব ডেভেলপার। আমার এই ওয়েবসাইটে আপনাকে স্বাগতম। 
+                এখানে আমি আমার কাজের অভিজ্ঞতা, স্কিল এবং বিভিন্ন প্রজেক্ট শেয়ার করে থাকি। 
+                আপনার যদি কোনো প্রশ্ন থাকে বা আমার সাথে কাজ করতে চান, তবে নিচের বাটনে ক্লিক করে সরাসরি যোগাযোগ করতে পারেন।
+            </p>
+            
+            <div class="social-links">
+                <a href="mailto:mdnazrul24897@gmail.com" class="btn">যোগাযোগ করুন (Email)</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
